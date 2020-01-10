@@ -1,4 +1,9 @@
+{% extends 'base.html' %}
+{% block pagetitle %} Shorten Your URLs {% endblock pagetitle %}
+{% block content %}
+<h1>Shorten your URLs</h1>
 <form method="post">{% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Shorten" />
     </form>
+{% endblock content %}

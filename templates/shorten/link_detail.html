@@ -1,2 +1,5 @@
-<p> Short Link: <a href="{{ object.short_url }}">{{ object.short_url }}</a>
+{% extends 'base.html' %}
+{% block content %}
+<p> Shortened Link: <a href="{{ object.short_url }}">{{ object.short_url }}</a>
     <p> Original Link: {{ object.url }}
+{% endblock content %}
