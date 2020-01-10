@@ -1,5 +1,5 @@
 from django.db import models
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from .utils import decimal2base_n, base_n2decimal
 
 class Link(models.Model):
